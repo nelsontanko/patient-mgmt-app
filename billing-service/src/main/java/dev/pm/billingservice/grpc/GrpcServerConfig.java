@@ -18,6 +18,7 @@ public class GrpcServerConfig {
     }
 
     private static class LogGrpcInterceptor implements ServerInterceptor {
+
         @Override
         public  ServerCall.Listener interceptCall(ServerCall call, Metadata headers, ServerCallHandler next) {
 
